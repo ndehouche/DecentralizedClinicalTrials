@@ -56,6 +56,14 @@ struct dataset{
   mapping(address => uint) licenses;
   }
 
+/// @dev The license structure. We use a double mapping for front-end access use cases
+struct license{ 
+address payable owner;
+uint index;
+uint timestamp;
+}
+/// @dev The license mapping. We use a double mapping for front-end access use cases
+mapping(address=>license[]) licensed;
 
 
 
@@ -168,6 +176,7 @@ onlyIfPaidEnough(datasets[_owner][_id].fee)
 {  
 emit licenseRequested(msg.sender, _owner, _id);
 datasets[_owner][_id].licenses[msg.sender]=block.timestamp;
+licensed[msg.sender].push(license(payable(_owner),_id,datasets[_owner][_id].licenses[msg.sender]));
 emit datasetLicensed(datasets[_owner][_id].creator, _owner, msg.sender, _id); 
 balance[datasets[_owner][_id].creator]+=datasets[_owner][_id].royalties*msg.value/100;
 balance[_owner]+=msg.value-datasets[_owner][_id].royalties*msg.value/100;
