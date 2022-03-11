@@ -199,5 +199,12 @@ function hasAccess(address _owner, uint _id) public view returns(bool)
     }
 
 
+
+function getLicenses(address _licensee)  public  view  returns(license[] memory ) {
+//@dev Get all wills created by an address to display front-end
+      return licensed[_licensee];
+}
+
+
 }
 
