@@ -1,5 +1,5 @@
-# Deployed contracts: https://ropsten.etherscan.io/address/0x672d381e9d98b97e631c4530bfd680bfce5db778
-
+# Deployed contracts: https://ropsten.etherscan.io/address/0x81c287B84c3705Cf1Fb1ac6DAc63fBd61f8eAEe3
+# Deployed front-end: https://DeCT.ndehouche.repl.co
 
 # Decentralized Clinical Trials Management
 Contracts to manage the ownership, licensing and access control of clinical trial data
