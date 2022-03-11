@@ -1,9 +1,11 @@
-# DecentralizedClinicalTrials
+# Decentralized Clinical Trials Management
 Contracts to manage the ownership, licensing and access control of clinical trial data
 Added-value of a public (permissionless) blockchain: Access Management and Payment Processing
 Limitation of a public blockchain: Data storage
 Architecture choice: Smart contract for access management and payment processing, external service (arweave, Ocean libraries, IPFS) for data storage.
+
 Three categories of users:
+
 **Contract owner:**
 Verifies data collectors
 **Data collector:**
