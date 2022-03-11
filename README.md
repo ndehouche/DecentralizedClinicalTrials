@@ -8,6 +8,7 @@ Three categories of users:
 
 **Contract owner:**
 Verifies data collectors
+
 **Data collector:**
 Verified identity.
 Deposits data in external source.
@@ -17,6 +18,7 @@ Hash
 Owner
 Creator 
 Royalties
+
 **Data owner:**
 Has attributes (no PII), stored in a struct.
 Verifies that data has been correctly deposited.
@@ -24,11 +26,13 @@ Agrees on royalties
 Determines access duration
 Approves data creation
 Mapping is created
+
 **Data licensee:**
 Anonymous, defined by address
 Pays fee, split between data collector and data owner, as per royalty agreement
 Access is temporarily granted
 Whitelisted licensees go past a Web3js/EtherJs paywall to access data.
+
 **Additional modules:**
 Search for data owners according to a clinical trial’s criteria
 Randomization with Chainlink VRF
