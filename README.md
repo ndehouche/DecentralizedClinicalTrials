@@ -28,7 +28,8 @@ Verifies that data has been correctly deposited,
 Agrees on royalties, 
 Determines access duration, 
 Approves data creation,  
-Mapping is created.
+Mapping is created. 
+
 
 **Data licensee:**
 Anonymous, defined by address, 
